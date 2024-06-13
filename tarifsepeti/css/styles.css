@@ -1,0 +1,140 @@
+/* Genel sayfa stili */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Nav bar stili */
+nav {
+    background-color: #b71c1c;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #c62828;
+    transform: translateY(-4px);
+}
+
+/* Ana içerik stili */
+main {
+    padding: 50px 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #b71c1c;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Kart konteyneri stili */
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Form stili */
+.card {
+    background-color: #fff;
+    border: 2px solid #b71c1c;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px 40px;
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card input[type="text"],
+.card input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.card input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #b71c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card input[type="submit"]:hover {
+    background-color: #c62828;
+    transform: translateY(-4px);
+}
+
+.card input[type="submit"]:active {
+    background-color: #8e0000;
+    transform: translateY(0);
+}
+
+/* Hata mesajı */
+.card p {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Footer stili */
+footer {
+    background-color: #b71c1c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
