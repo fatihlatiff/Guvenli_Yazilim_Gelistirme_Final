@@ -76,8 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label>Açıklama:</label><textarea name="description" required><?php echo htmlspecialchars($description); ?></textarea><br>
                 <label>Admin Yetkisi:</label>
                 <select name="value">
-                    <option value="false" <?php echo ($value == 'false') ? 'selected' : ''; ?>>Hayır</option>
-                    <option value="true" <?php echo ($value == 'true') ? 'selected' : ''; ?>>Evet</option>
+                    <option value="" <?php echo ($value == '') ? 'selected' : ''; ?>>Hayır</option>
+                    <option value="" <?php echo ($value == '') ? 'selected' : ''; ?>>Evet</option>
                 </select><br>
                 <input type="submit" value="Güncelle">
             </form>
